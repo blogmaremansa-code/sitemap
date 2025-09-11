@@ -790,6 +790,42 @@ document.write(unescape('%3Cdiv%20id%3D%22bs-apps-root%22%3E%3C/div%3E%0A%0A%3Cs
       fetchWeatherData();
     })();
   </script>
+
+ <script>
+
+  (function() {
+
+    var bingIndexNowKey = &#39;96e823d939d04915b24c430b7f506c9c&#39;;
+
+    var bingIndexNowUrl = &#39;https://ssl.bing.com/webmaster/api.svc/pox/SubmitUrlbatch?apikey=&#39; + bingIndexNowKey;
+
+    var postUrl = &#39;<data:blog.canonicalUrl/>&#39;;
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open(&#39;POST&#39;, bingIndexNowUrl);
+
+    xhr.setRequestHeader(&#39;Content-Type&#39;, &#39;text/plain&#39;);
+
+    xhr.send(postUrl);
+
+  })();
+
+</script>
+  
+  
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-2KE9LRBB3P'/>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-2KE9LRBB3P&#39;);
+</script>
+
+  <script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0504822032537518'/>
+  
 </body>
 </html>
 
