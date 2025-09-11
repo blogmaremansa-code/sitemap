@@ -370,11 +370,15 @@
     .footer-logo img {
       max-height: 34px;
     }
+    .footer-info-container {
+      display: flex;
+      align-items: center; /* Centraliza verticalmente o logo e o texto */
+      gap: 15px; /* Espaço entre o logo e o texto */
+    }
     .footer-info {
-      margin-left: 30px;
       color: var(--footer-color);
       font-size: 14px;
-      align-self: center; /* Centraliza verticalmente em relação ao logo */
+      margin: 0; /* Remove margens padrão */
     }
     .footer-info a {
       color: var(--footer-color);
@@ -465,10 +469,9 @@
         align-items: center; /* Centraliza todos os elementos */
         text-align: center;
       }
-      .footer-info {
+      .footer-info-container {
+        justify-content: center; /* Centraliza o logo e o texto horizontalmente em mobile */
         margin: 25px 0 0;
-        text-align: center;
-        margin-left: 0; /* Remove a margem lateral em mobile */
       }
       .storyify-pro-about-section .social-icons {
         margin: 25px 0 0;
@@ -599,11 +602,13 @@
       <div class="container">
         <div id="storyify-pro-about-section">
           <div class="Image">
-            <a class="footer-logo" href="/">
-              <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj9QqHXkHfp6qpHxvlwYSEi7_0Xci5PXEWSjJn1IBzTmBy40n60Bsx0wZyJ29i2Cs_JCQCt0bQVC_YWUwbAaNpCXkYk79eVNFI3XOnscFk4qPxBaXNi0Z7S7DnCR9SOrIA3cfweRQx4cVEcxyuYhD2MWJ0RgGcF5hMZQaZ-D33REC8-IZRrxdV9CiUCWcVJ=s512" alt="Logo do Site">
-            </a>
-            <div class="footer-info">
-              <p>Escolha a pílula preta, seja um blackpill..</p>
+            <div class="footer-info-container">
+              <a class="footer-logo" href="/">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj9QqHXkHfp6qpHxvlwYSEi7_0Xci5PXEWSjJn1IBzTmBy40n60Bsx0wZyJ29i2Cs_JCQCt0bQVC_YWUwbAaNpCXkYk79eVNFI3XOnscFk4qPxBaXNi0Z7S7DnCR9SOrIA3cfweRQx4cVEcxyuYhD2MWJ0RgGcF5hMZQaZ-D33REC8-IZRrxdV9CiUCWcVJ=s512" alt="Logo do Site">
+              </a>
+              <div class="footer-info">
+                <p>Escolha a pílula preta, seja um blackpill..</p>
+              </div>
             </div>
           </div>
           <div class="LinkList">
@@ -700,7 +705,15 @@
       document.body.style.overflow = ''; // Restaura o scroll
     }
 
-    mobileMenuToggle.addEventListener('click', openMobileMenu);
+    // Toggle menu ao clicar no ícone de hambúrguer
+    mobileMenuToggle.addEventListener('click', function() {
+      if (mobileMenu.classList.contains('active')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
     mobileMenuClose.addEventListener('click', closeMobileMenu);
     mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 
