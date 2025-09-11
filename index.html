@@ -4,46 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apps</title>
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
   <!-- Fonte Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <!-- Estilos CSS -->
   <style>
     :root {
       --body-font: 'Inter', Arial, sans-serif;
       --title-font: 'Inter', Arial, sans-serif;
       --text-font: 'Inter', Arial, sans-serif;
-
       --main-color: #00b8f2;
       --title-color: #111111;
       --text-color: #757575;
-
       --header-bg: #ffffff;
       --header-color: #111111;
       --header-hover-color: #00b8f2;
-
       --button-bg: #00b8f2;
       --button-color: #ffffff;
       --button-hover-bg: #2ce59b;
       --button-hover-color: #ffffff;
-
       --footer-bg: #00b8f2;
       --footer-bg1: #00769b;
       --footer-color: #ffffff;
       --footer-hover-color: #00b8f2;
       --footerbar-color: #ffffff;
       --footerbar-hover-color: #00b8f2;
-
       --border-color: rgba(155, 155, 155, 0.15);
       --border-radius: 6px;
     }
-
     html.is-dark {
       --body-bg-color: #1c1c1c;
       --outer-bg: #151515;
@@ -58,13 +49,11 @@
       --footerbar-color: #f6f7f8;
       --post-image-shadow: rgb(0 0 0 / 65%);
     }
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
     body {
       font-family: var(--body-font);
       font-size: 14px;
@@ -72,22 +61,18 @@
       background-color: var(--body-bg-color, #fafafa);
       line-height: 1.6;
     }
-
     a {
       text-decoration: none;
       color: var(--main-color);
     }
-
     a:hover {
       text-decoration: underline;
     }
-
     .container {
       max-width: 1110px;
       margin: 0 auto;
       padding: 0 15px;
     }
-
     /* --- Cabeçalho --- */
     #header-wrapper {
       background-color: var(--header-bg);
@@ -96,55 +81,46 @@
       top: 0;
       z-index: 1000;
     }
-
     .header-inner, .main-header {
       width: 100%;
       height: 58px;
     }
-
     .header-header {
       width: 100%;
       height: 58px;
       background-color: var(--header-bg);
     }
-
     .header-items {
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 100%;
     }
-
     .flex-left {
       display: flex;
       align-items: center;
     }
-
     .main-logo {
       height: 58px;
       margin-right: 16px;
       display: flex;
       align-items: center; /* Alinha o logo verticalmente com o menu */
     }
-
     .main-logo img {
       max-height: 34px;
       vertical-align: middle;
     }
-
     #storyify-pro-main-nav {
       height: 58px;
       display: flex;
       align-items: center; /* Alinha o menu verticalmente com o logo */
     }
-
     #storyify-pro-main-nav ul {
       display: flex;
       list-style: none;
       margin: 0;
       padding: 0;
     }
-
     #storyify-pro-main-nav ul > li > a {
       display: block;
       height: 58px;
@@ -154,16 +130,13 @@
       line-height: 58px;
       padding: 0 14px;
     }
-
     #storyify-pro-main-nav ul > li:hover > a {
       color: var(--header-hover-color);
     }
-
     .flex-right {
       display: flex;
       align-items: center;
     }
-
     .main-toggle-style {
       background-color: var(--button-bg);
       color: var(--button-color);
@@ -178,29 +151,24 @@
       margin-left: 10px;
       transition: background-color 0.3s ease;
     }
-
     .main-toggle-style:hover {
       background-color: var(--button-hover-bg);
       color: var(--button-hover-color);
     }
-
     .darkmode-toggle:after {
       content: '\f186'; /* Ícone de lua */
       font-family: 'Font Awesome 5 Free';
       font-weight: 400;
     }
-
     html.is-dark .darkmode-toggle:after {
       content: '\f185'; /* Ícone de sol */
       font-weight: 900;
     }
-
     .show-search:after {
       content: '\f002'; /* Ícone de lupa */
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
     }
-
     /* Estilo da barra de busca que aparece ao clicar na lupa */
     #main-search-wrap {
       display: none;
@@ -213,7 +181,6 @@
       z-index: 25;
       padding: 0;
     }
-
     .main-search {
       position: relative;
       float: right;
@@ -227,7 +194,6 @@
       margin: 0;
       animation: showSearch .17s ease;
     }
-
     .main-search .search-form {
       position: relative;
       height: 34px;
@@ -236,7 +202,6 @@
       padding: 0;
       border: 0;
     }
-
     .main-search .search-input {
       position: relative;
       width: 100%;
@@ -249,12 +214,10 @@
       padding: 0 10px 0 0;
       border: 0;
     }
-
     .main-search .search-input::placeholder {
       color: var(--header-color);
       opacity: 0.65;
     }
-
     .hide-search {
       background-color: var(--button-bg);
       color: var(--button-color);
@@ -267,24 +230,20 @@
       justify-content: center;
       transition: background-color 0.3s ease;
     }
-
     .hide-search:hover {
       background-color: var(--button-hover-bg);
       color: var(--button-hover-color);
     }
-
     .hide-search:after {
       content: '\f00d'; /* Ícone de X */
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       font-size: 16px;
     }
-
     @keyframes showSearch {
       0% { width: 80%; opacity: 0; }
       100% { width: 100%; opacity: 1; }
     }
-
     /* Estilo do Widget de Clima */
     #weather-header {
       display: flex;
@@ -296,32 +255,99 @@
       font-size: 14px;
       color: var(--header-color);
     }
-
     #weather-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 4px;
     }
-
     #weather-content span.city {
       font-weight: 600;
       font-size: 13px;
     }
-
     #weather-content div.weather-info {
       display: flex;
       align-items: center;
       gap: 6px;
       font-size: 13px;
     }
-
     #weather-content div.weather-info span.icon {
       font-size: 16px;
     }
-
     #weather-content div.weather-info span.temp {
       font-weight: 500;
+    }
+
+    /* --- Menu Mobile (Off-Canvas) --- */
+    .mobile-menu-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -300px; /* Começa fora da tela */
+      width: 280px;
+      height: 100%;
+      background-color: var(--header-bg);
+      z-index: 1000;
+      padding: 20px;
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      overflow-y: auto;
+    }
+    .mobile-menu.active {
+      right: 0;
+    }
+    .mobile-menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .mobile-menu-close {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: var(--header-color);
+      cursor: pointer;
+    }
+    .mobile-menu ul {
+      list-style: none;
+      padding: 0;
+    }
+    .mobile-menu li {
+      margin-bottom: 15px;
+    }
+    .mobile-menu a {
+      display: block;
+      color: var(--header-color);
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 0;
+      font-weight: 500;
+    }
+    .mobile-menu a:hover {
+      color: var(--header-hover-color);
+    }
+    .mobile-menu .mobile-toggle-section {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+    .mobile-menu .mobile-toggle-section a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
     }
 
     /* --- Rodapé --- */
@@ -331,48 +357,41 @@
       padding: 50px 0 0;
       margin-top: 40px;
     }
-
     .primary-footer .container {
       border-bottom: 1px solid var(--footer-bg1);
       padding-bottom: 50px;
     }
-
     #storyify-pro-about-section {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start; /* Alinha ao topo para evitar desalinhamento com muitos itens */
       flex-wrap: wrap;
     }
-
     .footer-logo img {
       max-height: 34px;
     }
-
     .footer-info {
       margin-left: 30px;
       color: var(--footer-color);
       font-size: 14px;
+      align-self: center; /* Centraliza verticalmente em relação ao logo */
     }
-
     .footer-info a {
       color: var(--footer-color);
     }
-
     .footer-info a:hover {
       color: var(--footer-hover-color);
     }
-
     .storyify-pro-about-section .social-icons {
       display: flex;
       flex-wrap: wrap;
+      gap: 10px; /* Adiciona espaço entre os ícones */
+      margin-left: 30px; /* Alinha com o texto da .footer-info */
     }
-
-    .storyify-pro-about-section .social-icons li {
-      margin-left: 10px;
-    }
-
     .storyify-pro-about-section .social-icons li a {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 36px;
       height: 36px;
       background-color: rgba(155, 155, 155, .05);
@@ -380,12 +399,12 @@
       text-align: center;
       line-height: 36px;
       border-radius: 50%;
+      transition: all 0.3s ease;
     }
-
     .storyify-pro-about-section .social-icons li a:hover {
+      background-color: var(--footer-hover-color);
       color: #fff;
     }
-
     .footerbar {
       background-color: var(--footer-bg1);
       height: 58px;
@@ -393,45 +412,37 @@
       align-items: center;
       color: var(--footerbar-color);
     }
-
     .footerbar .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     .footer-copyright a {
       color: var(--footerbar-color);
     }
-
     .footer-copyright a:hover {
       color: var(--footerbar-hover-color);
     }
-
     #footer-menu ul {
       display: flex;
       list-style: none;
       margin: 0;
       padding: 0;
     }
-
     #footer-menu ul li a {
       font-size: 14px;
       color: var(--footerbar-color);
       padding: 0;
       margin-left: 25px;
     }
-
     #footer-menu ul li a:hover {
       color: var(--footerbar-hover-color);
     }
-
     /* --- Responsividade --- */
     @media (max-width: 768px) {
       #storyify-pro-main-nav ul {
         display: none;
       }
-
       .mobile-menu-toggle {
         display: flex;
         height: 34px;
@@ -441,44 +452,38 @@
         padding: 0 15px;
         cursor: pointer;
       }
-
       .mobile-menu-toggle:after {
         content: '\f0c9';
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
       }
-
       .mobile-menu-toggle:hover {
         color: var(--header-hover-color);
       }
-
       #storyify-pro-about-section {
         flex-direction: column;
+        align-items: center; /* Centraliza todos os elementos */
         text-align: center;
       }
-
       .footer-info {
         margin: 25px 0 0;
         text-align: center;
+        margin-left: 0; /* Remove a margem lateral em mobile */
       }
-
-      #storyify-pro-about-section .LinkList {
-        width: 100%;
-        justify-content: center;
+      .storyify-pro-about-section .social-icons {
         margin: 25px 0 0;
+        margin-left: 0; /* Remove a margem lateral em mobile */
+        justify-content: center;
       }
-
       .footerbar .container {
         flex-direction: column;
         text-align: center;
       }
-
       #footer-menu, .footerbar .footer-copyright {
         width: 100%;
         text-align: center;
         margin: 10px 0 0;
       }
-
       #footer-menu ul li a {
         display: block;
         margin: 5px 10px 0;
@@ -487,6 +492,36 @@
   </style>
 </head>
 <body>
+  <!-- Overlay do Menu Mobile -->
+  <div class="mobile-menu-overlay"></div>
+  <!-- Menu Mobile -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <span>Menu</span>
+      <button class="mobile-menu-close">&times;</button>
+    </div>
+    <ul>
+      <li><a href="https://apps.blackpilado.com.br/">Início</a></li>
+      <li><a href="https://grana.blackpilado.com.br/">Economia</a></li>
+      <li><a href="https://escola.blackpilado.com.br/">Escola</a></li>
+      <li><a href="https://dicionario.blackpilado.com.br/">Dicionário</a></li>
+      <li><a href="https://letras.blackpilado.com.br/">Letras</a></li>
+      <li><a href="https://esportes.blackpilado.com.br/">Esportes</a></li>
+      <li><a href="https://saude.blackpilado.com.br/">Saúde</a></li>
+      <li><a href="https://tecnologia.blackpilado.com.br/">Tecnologia</a></li>
+      <li><a href="https://bulas.blackpilado.com.br/">Bulas</a></li>
+      <li><a href="https://apps.blackpilado.com.br/">Apps</a></li>
+      <li><a href="https://faq.blackpilado.com.br/">FAQ</a></li>
+    </ul>
+    <div class="mobile-toggle-section">
+      <a href="javascript:;" class="darkmode-toggle" title="Alternar tema">
+        <i class="fas fa-moon"></i> <span>Modo Escuro</span>
+      </a>
+      <a href="javascript:;" class="show-search" title="Pesquisar">
+        <i class="fas fa-search"></i> <span>Pesquisar</span>
+      </a>
+    </div>
+  </div>
 
   <!-- Cabeçalho -->
   <header id="header-wrapper">
@@ -542,7 +577,6 @@
         </div>
       </div>
     </div>
-
     <!-- Barra de Busca (inicialmente oculta) -->
     <div id="main-search-wrap">
       <div class="main-search">
@@ -553,16 +587,12 @@
       </div>
     </div>
   </header>
-
   <!-- Conteúdo da Página (Apenas para espaçamento) -->
   <main style="min-height: 60vh; padding: 40px 0; text-align: center;">
-    
     <script>
       document.write(unescape('%3Cdiv%20id%3D%22bsa-play-root%22%3E%3C/div%3E%0A%0A%3Cscript%3E%0A%28function%28%29%20%7B%0A%20%20const%20BSA_PLAY_CONFIG%20%3D%20%7B%0A%20%20%20%20SEARCH_TERMS%3A%20%5B%0A%20%20%20%20%20%20%22jogos%20populares%22%2C%20%22apps%20gratuitos%22%2C%20%22jogos%20de%20a%E7%E3o%22%2C%20%22apps%20de%20produtividade%22%2C%0A%20%20%20%20%20%20%22jogos%20casuais%22%2C%20%22apps%20de%20redes%20sociais%22%2C%20%22jogos%20de%20estrat%E9gia%22%2C%20%22jogos%20mais%20jogados%22%2C%0A%20%20%20%20%20%20%22jogos%20de%20quebra-cabe%E7a%20android%22%2C%20%22jogos%20de%20corrida%22%2C%20%22aplicativos%20mais%20baixados%22%2C%0A%20%20%20%20%20%20%22melhores%20apps%20produtividade%22%2C%20%22apps%20de%20fotografia%22%2C%20%22apps%20de%20edi%E7%E3o%20de%20v%EDdeo%22%2C%0A%20%20%20%20%20%20%22apps%20de%20m%FAsica%22%2C%20%22apps%20de%20sa%FAde%20e%20fitness%22%2C%20%22apps%20de%20finan%E7as%22%2C%20%22apps%20de%20educa%E7%E3o%22%2C%0A%20%20%20%20%20%20%22apps%20de%20viagem%22%2C%20%22apps%20de%20compras%22%2C%20%22apps%20de%20delivery%22%2C%20%22apps%20de%20transporte%22%2C%0A%20%20%20%20%20%20%22apps%20de%20not%EDcias%22%2C%20%22apps%20de%20clima%22%2C%20%22apps%20de%20tradu%E7%E3o%22%2C%20%22apps%20de%20seguran%E7a%22%2C%0A%20%20%20%20%20%20%22apps%20de%20ferramentas%22%2C%20%22apps%20de%20entretenimento%22%2C%20%22apps%20de%20sa%FAde%22%0A%20%20%20%20%5D%2C%0A%20%20%20%20INITIAL_TERMS%3A%204%2C%0A%20%20%20%20BATCH_SIZE%3A%2012%2C%0A%20%20%20%20MAX_APPS%3A%201000000%2C%0A%20%20%20%20MAX_PER_TERM%3A%2050%0A%20%20%7D%3B%0A%0A%20%20//%20%u2705%20Estilos%20compat%EDveis%20com%20o%20tema%20Storify%20%u2014%20usam%20vari%E1veis%20CSS%0A%20%20const%20BSA_PLAY_STYLES%20%3D%20%60%0A%20%20%20%20%23bsa-play-container%20%7B%0A%20%20%20%20%20%20max-width%3A%201400px%3B%0A%20%20%20%20%20%20margin%3A%2060px%20auto%3B%0A%20%20%20%20%20%20padding%3A%2032px%2024px%3B%0A%20%20%20%20%20%20font-family%3A%20var%28--title-font%29%2C%20%27Google%20Sans%27%2C%20%27Roboto%27%2C%20sans-serif%3B%0A%20%20%20%20%20%20background%3A%20var%28--outer-bg%29%3B%0A%20%20%20%20%20%20color%3A%20var%28--title-color%29%3B%0A%20%20%20%20%20%20border-radius%3A%2020px%3B%0A%20%20%20%20%20%20box-shadow%3A%200%204px%2020px%20rgba%280%2C0%2C0%2C0.08%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%23bsa-play-title%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20font-size%3A%202.3rem%3B%0A%20%20%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20%20%20color%3A%20var%28--title-color%29%3B%0A%20%20%20%20%20%20margin-bottom%3A%2040px%3B%0A%20%20%20%20%20%20padding-bottom%3A%2012px%3B%0A%20%20%20%20%20%20border-bottom%3A%202px%20solid%20var%28--main-color%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%23bsa-play-grid%20%7B%0A%20%20%20%20%20%20display%3A%20grid%3B%0A%20%20%20%20%20%20grid-template-columns%3A%20repeat%28auto-fill%2C%20minmax%28200px%2C%201fr%29%29%3B%0A%20%20%20%20%20%20gap%3A%2032px%3B%0A%20%20%20%20%20%20justify-items%3A%20center%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.bsa-play-card%20%7B%0A%20%20%20%20%20%20background%3A%20var%28--outer-bg%29%3B%0A%20%20%20%20%20%20border-radius%3A%2016px%3B%0A%20%20%20%20%20%20box-shadow%3A%200%202px%206px%20rgba%280%2C0%2C0%2C0.1%29%2C%200%201px%203px%20rgba%280%2C0%2C0%2C0.15%29%3B%0A%20%20%20%20%20%20padding%3A%2024px%2020px%3B%0A%20%20%20%20%20%20text-decoration%3A%20none%3B%0A%20%20%20%20%20%20color%3A%20var%28--title-color%29%3B%0A%20%20%20%20%20%20transition%3A%20all%200.3s%20cubic-bezier%280.4%2C%200%2C%200.2%2C%201%29%3B%0A%20%20%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20max-width%3A%20200px%3B%0A%20%20%20%20%20%20border%3A%201px%20solid%20var%28--border-color%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.bsa-play-card%3Ahover%20%7B%0A%20%20%20%20%20%20transform%3A%20translateY%28-6px%29%3B%0A%20%20%20%20%20%20box-shadow%3A%200%206px%2016px%20rgba%280%2C0%2C0%2C0.15%29%2C%200%204px%208px%20rgba%280%2C0%2C0%2C0.1%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.bsa-play-img%20%7B%0A%20%20%20%20%20%20width%3A%20150px%3B%0A%20%20%20%20%20%20height%3A%20150px%3B%0A%20%20%20%20%20%20border-radius%3A%2020px%3B%0A%20%20%20%20%20%20object-fit%3A%20cover%3B%0A%20%20%20%20%20%20background%3A%20var%28--outer-bg%29%3B%0A%20%20%20%20%20%20margin-bottom%3A%2016px%3B%0A%20%20%20%20%20%20box-shadow%3A%200%203px%206px%20rgba%280%2C0%2C0%2C0.08%29%3B%0A%20%20%20%20%20%20transition%3A%20all%200.3s%20ease%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.bsa-play-card%3Ahover%20.bsa-play-img%20%7B%0A%20%20%20%20%20%20box-shadow%3A%200%205px%2020px%20rgba%280%2C0%2C0%2C0.15%29%3B%0A%20%20%20%20%20%20transform%3A%20scale%281.02%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.bsa-play-name%20%7B%0A%20%20%20%20%20%20font-size%3A%201rem%3B%0A%20%20%20%20%20%20font-weight%3A%20500%3B%0A%20%20%20%20%20%20color%3A%20var%28--title-color%29%3B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20line-height%3A%201.35%3B%0A%20%20%20%20%20%20display%3A%20-webkit-box%3B%0A%20%20%20%20%20%20-webkit-line-clamp%3A%202%3B%0A%20%20%20%20%20%20-webkit-box-orient%3A%20vertical%3B%0A%20%20%20%20%20%20overflow%3A%20hidden%3B%0A%20%20%20%20%20%20margin%3A%200%200%2010px%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.bsa-play-meta%20%7B%0A%20%20%20%20%20%20font-size%3A%200.82rem%3B%0A%20%20%20%20%20%20color%3A%20var%28--meta-color%29%3B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20line-height%3A%201.4%3B%0A%20%20%20%20%20%20font-weight%3A%20500%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.bsa-play-rating%20%7B%0A%20%20%20%20%20%20color%3A%20%23fbbc04%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%23bsa-play-loading%2C%0A%20%20%20%20%23bsa-play-infinite-loader%20%7B%0A%20%20%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20%20%20padding%3A%2040px%200%3B%0A%20%20%20%20%20%20color%3A%20var%28--meta-color%29%3B%0A%20%20%20%20%20%20opacity%3A%200%3B%0A%20%20%20%20%20%20animation%3A%20fadeIn%200.4s%20forwards%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.bsa-play-spinner%20%7B%0A%20%20%20%20%20%20border%3A%204px%20solid%20var%28--border-color%29%3B%0A%20%20%20%20%20%20border-top%3A%204px%20solid%20var%28--main-color%29%3B%0A%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20width%3A%2032px%3B%0A%20%20%20%20%20%20height%3A%2032px%3B%0A%20%20%20%20%20%20animation%3A%20spin%200.8s%20linear%20infinite%3B%0A%20%20%20%20%20%20margin%3A%2020px%20auto%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20@keyframes%20spin%20%7B%0A%20%20%20%20%20%200%25%20%7B%20transform%3A%20rotate%280deg%29%3B%20%7D%0A%20%20%20%20%20%20100%25%20%7B%20transform%3A%20rotate%28360deg%29%3B%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20@keyframes%20fadeIn%20%7B%0A%20%20%20%20%20%20from%20%7B%20opacity%3A%200%3B%20%7D%0A%20%20%20%20%20%20to%20%7B%20opacity%3A%201%3B%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20/*%20%uD83C%uDF19%20Modo%20Escuro%20%u2014%20Herda%20vari%E1veis%20do%20tema%20Storify%20*/%0A%20%20%20%20@media%20%28prefers-color-scheme%3A%20dark%29%20%7B%0A%20%20%20%20%20%20%23bsa-play-container%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20var%28--outer-bg%29%3B%0A%20%20%20%20%20%20%20%20color%3A%20var%28--title-color%29%3B%0A%20%20%20%20%20%20%20%20box-shadow%3A%200%204px%2020px%20rgba%280%2C0%2C0%2C0.3%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20.bsa-play-card%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20var%28--outer-bg%29%3B%0A%20%20%20%20%20%20%20%20color%3A%20var%28--title-color%29%3B%0A%20%20%20%20%20%20%20%20border-color%3A%20var%28--border-color%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20.bsa-play-name%20%7B%0A%20%20%20%20%20%20%20%20color%3A%20var%28--title-color%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20.bsa-play-meta%20%7B%0A%20%20%20%20%20%20%20%20color%3A%20var%28--meta-color%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20.bsa-play-img%20%7B%0A%20%20%20%20%20%20%20%20background%3A%20var%28--outer-bg%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20.bsa-play-spinner%20%7B%0A%20%20%20%20%20%20%20%20border-color%3A%20var%28--border-color%29%3B%0A%20%20%20%20%20%20%20%20border-top-color%3A%20var%28--main-color%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%60%3B%0A%0A%20%20const%20style%20%3D%20document.createElement%28%27style%27%29%3B%0A%20%20style.textContent%20%3D%20BSA_PLAY_STYLES%3B%0A%20%20document.head.appendChild%28style%29%3B%0A%0A%20%20const%20root%20%3D%20document.getElementById%28%27bsa-play-root%27%29%3B%0A%20%20if%20%28%21root%29%20return%3B%0A%0A%20%20root.innerHTML%20%3D%20%60%0A%20%20%20%20%3Cdiv%20id%3D%22bsa-play-container%22%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22bsa-play-grid%22%3E%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22bsa-play-loading%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bsa-play-spinner%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cp%3ECarregando%20apps%20e%20jogos%20da%20Play%20Store...%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%60%3B%0A%0A%20%20let%20allApps%20%3D%20%5B%5D%3B%0A%20%20let%20currentIndex%20%3D%200%3B%0A%20%20let%20isLoading%20%3D%20false%3B%0A%20%20let%20isFetchingMoreTerms%20%3D%20false%3B%0A%20%20const%20displayedApps%20%3D%20new%20Set%28%29%3B%0A%20%20const%20pendingTerms%20%3D%20%5B...BSA_PLAY_CONFIG.SEARCH_TERMS%5D%3B%0A%20%20const%20initialTerms%20%3D%20pendingTerms.splice%280%2C%20BSA_PLAY_CONFIG.INITIAL_TERMS%29%3B%0A%0A%20%20function%20getRandomRating%28%29%20%7B%0A%20%20%20%20return%20%28Math.random%28%29%20*%2010%29.toFixed%281%29%3B%0A%20%20%7D%0A%0A%20%20async%20function%20fetchAppsFromSearch%28term%29%20%7B%0A%20%20%20%20try%20%7B%0A%20%20%20%20%20%20const%20searchUrl%20%3D%20%60https%3A//play.google.com/store/search%3Fq%3D%24%7BencodeURIComponent%28term%29%7D%26c%3Dapps%60%3B%0A%20%20%20%20%20%20const%20proxyUrl%20%3D%20%60https%3A//corsproxy.io/%3F%24%7BencodeURIComponent%28searchUrl%29%7D%60%3B%0A%20%20%20%20%20%20const%20response%20%3D%20await%20fetch%28proxyUrl%2C%20%7B%20timeout%3A%208000%20%7D%29%3B%0A%20%20%20%20%20%20if%20%28%21response.ok%29%20throw%20new%20Error%28%60HTTP%20%24%7Bresponse.status%7D%60%29%3B%0A%20%20%20%20%20%20const%20html%20%3D%20await%20response.text%28%29%3B%0A%20%20%20%20%20%20const%20parser%20%3D%20new%20DOMParser%28%29%3B%0A%20%20%20%20%20%20const%20doc%20%3D%20parser.parseFromString%28html%2C%20%27text/html%27%29%3B%0A%20%20%20%20%20%20const%20apps%20%3D%20%5B%5D%3B%0A%20%20%20%20%20%20const%20cards%20%3D%20doc.querySelectorAll%28%27a%5Bhref*%3D%22/store/apps/details%3Fid%3D%22%5D%27%29%3B%0A%0A%20%20%20%20%20%20let%20count%20%3D%200%3B%0A%20%20%20%20%20%20for%20%28let%20card%20of%20cards%29%20%7B%0A%20%20%20%20%20%20%20%20if%20%28count%20%3E%3D%20BSA_PLAY_CONFIG.MAX_PER_TERM%29%20break%3B%0A%20%20%20%20%20%20%20%20try%20%7B%0A%20%20%20%20%20%20%20%20%20%20const%20url%20%3D%20card.href%3B%0A%20%20%20%20%20%20%20%20%20%20const%20idMatch%20%3D%20url.match%28/id%3D%28%5B%5E%26%5D+%29/%29%3B%0A%20%20%20%20%20%20%20%20%20%20if%20%28%21idMatch%29%20continue%3B%0A%20%20%20%20%20%20%20%20%20%20const%20nameElem%20%3D%20card.querySelector%28%27span.DdYX5%2C%20div%5Brole%3D%22heading%22%5D%2C%20span%27%29%3F.textContent.trim%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20if%20%28%21nameElem%29%20continue%3B%0A%20%20%20%20%20%20%20%20%20%20const%20imgElem%20%3D%20card.querySelector%28%27img%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20const%20imgUrl%20%3D%20imgElem%3F.src%20%7C%7C%20imgElem%3F.dataset.src%20%7C%7C%20%27%27%3B%0A%20%20%20%20%20%20%20%20%20%20const%20app%20%3D%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20name%3A%20nameElem%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20url%3A%20url%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20imageUrl%3A%20imgUrl%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20rating%3A%20getRandomRating%28%29%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20searchTerm%3A%20term%0A%20%20%20%20%20%20%20%20%20%20%7D%3B%0A%20%20%20%20%20%20%20%20%20%20apps.push%28app%29%3B%0A%20%20%20%20%20%20%20%20%20%20count++%3B%0A%20%20%20%20%20%20%20%20%7D%20catch%20%28err%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20continue%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20return%20apps%3B%0A%20%20%20%20%7D%20catch%20%28err%29%20%7B%0A%20%20%20%20%20%20console.warn%28%60Erro%20ao%20buscar%20por%20%22%24%7Bterm%7D%22%60%2C%20err%29%3B%0A%20%20%20%20%20%20return%20%5B%5D%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%0A%20%20async%20function%20loadInitialApps%28%29%20%7B%0A%20%20%20%20const%20loadingEl%20%3D%20document.getElementById%28%27bsa-play-loading%27%29%3B%0A%20%20%20%20loadingEl.style.opacity%20%3D%20%270%27%3B%0A%20%20%20%20setTimeout%28%28%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20loadingEl.innerHTML%20%3D%20%60%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bsa-play-spinner%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cp%3ECarregando%20apps%20populares...%3C/p%3E%0A%20%20%20%20%20%20%60%3B%0A%20%20%20%20%20%20loadingEl.style.opacity%20%3D%20%271%27%3B%0A%20%20%20%20%7D%2C%20100%29%3B%0A%0A%20%20%20%20try%20%7B%0A%20%20%20%20%20%20const%20promises%20%3D%20initialTerms.map%28term%20%3D%3E%20fetchAppsFromSearch%28term%29%29%3B%0A%20%20%20%20%20%20const%20results%20%3D%20await%20Promise.allSettled%28promises%29%3B%0A%0A%20%20%20%20%20%20for%20%28const%20result%20of%20results%29%20%7B%0A%20%20%20%20%20%20%20%20if%20%28result.status%20%3D%3D%3D%20%27fulfilled%27%20%26%26%20result.value%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20allApps%20%3D%20%5B...allApps%2C%20...result.value%5D%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20const%20unique%20%3D%20new%20Map%28%29%3B%0A%20%20%20%20%20%20allApps.forEach%28app%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20if%20%28%21unique.has%28app.name%29%29%20unique.set%28app.name%2C%20app%29%3B%0A%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20allApps%20%3D%20Array.from%28unique.values%28%29%29%3B%0A%0A%20%20%20%20%20%20allApps.sort%28%28%29%20%3D%3E%20Math.random%28%29%20-%200.5%29%3B%0A%20%20%20%20%20%20loadingEl.style.display%20%3D%20%27none%27%3B%0A%20%20%20%20%20%20renderBatch%28%29%3B%0A%20%20%20%20%7D%20catch%20%28err%29%20%7B%0A%20%20%20%20%20%20console.error%28%22Erro%20ao%20carregar%20apps%20iniciais%3A%22%2C%20err%29%3B%0A%20%20%20%20%20%20loadingEl.innerHTML%20%3D%20%27%3Cp%20style%3D%22color%3A%20var%28--meta-color%29%3B%22%3EErro%20ao%20carregar%20apps.%3C/p%3E%27%3B%0A%20%20%20%20%20%20loadingEl.style.display%20%3D%20%27block%27%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%0A%20%20async%20function%20loadMoreTermsIfNeeded%28%29%20%7B%0A%20%20%20%20if%20%28isFetchingMoreTerms%20%7C%7C%20pendingTerms.length%20%3D%3D%3D%200%20%7C%7C%20allApps.length%20%3E%3D%20BSA_PLAY_CONFIG.MAX_APPS%29%20return%3B%0A%0A%20%20%20%20isFetchingMoreTerms%20%3D%20true%3B%0A%20%20%20%20const%20term%20%3D%20pendingTerms.shift%28%29%3B%0A%20%20%20%20if%20%28%21term%29%20%7B%0A%20%20%20%20%20%20isFetchingMoreTerms%20%3D%20false%3B%0A%20%20%20%20%20%20return%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20const%20newApps%20%3D%20await%20fetchAppsFromSearch%28term%29%3B%0A%20%20%20%20allApps%20%3D%20%5B...allApps%2C%20...newApps%5D%3B%0A%0A%20%20%20%20const%20unique%20%3D%20new%20Map%28%29%3B%0A%20%20%20%20allApps.forEach%28app%20%3D%3E%20%7B%0A%20%20%20%20%20%20if%20%28%21unique.has%28app.name%29%29%20unique.set%28app.name%2C%20app%29%3B%0A%20%20%20%20%7D%29%3B%0A%20%20%20%20allApps%20%3D%20Array.from%28unique.values%28%29%29%3B%0A%0A%20%20%20%20isFetchingMoreTerms%20%3D%20false%3B%0A%20%20%7D%0A%0A%20%20function%20renderBatch%28%29%20%7B%0A%20%20%20%20if%20%28isLoading%29%20return%3B%0A%20%20%20%20isLoading%20%3D%20true%3B%0A%0A%20%20%20%20const%20grid%20%3D%20document.getElementById%28%27bsa-play-grid%27%29%3B%0A%20%20%20%20const%20batch%20%3D%20%5B%5D%3B%0A%0A%20%20%20%20while%20%28batch.length%20%3C%20BSA_PLAY_CONFIG.BATCH_SIZE%20%26%26%20currentIndex%20%3C%20allApps.length%29%20%7B%0A%20%20%20%20%20%20const%20app%20%3D%20allApps%5BcurrentIndex%5D%3B%0A%20%20%20%20%20%20if%20%28%21displayedApps.has%28app.name%29%29%20%7B%0A%20%20%20%20%20%20%20%20batch.push%28app%29%3B%0A%20%20%20%20%20%20%20%20displayedApps.add%28app.name%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20currentIndex++%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20if%20%28batch.length%20%3D%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20loadMoreTermsIfNeeded%28%29.then%28%28%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20if%20%28allApps.length%20%3E%20currentIndex%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20setTimeout%28renderBatch%2C%20500%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20isLoading%20%3D%20false%3B%0A%20%20%20%20%20%20return%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20const%20infiniteLoader%20%3D%20document.createElement%28%27div%27%29%3B%0A%20%20%20%20infiniteLoader.id%20%3D%20%27bsa-play-infinite-loader%27%3B%0A%20%20%20%20infiniteLoader.innerHTML%20%3D%20%60%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22bsa-play-spinner%22%3E%3C/div%3E%0A%20%20%20%20%20%20%3Cp%3ECarregando%20mais%20apps...%3C/p%3E%0A%20%20%20%20%60%3B%0A%20%20%20%20grid.appendChild%28infiniteLoader%29%3B%0A%0A%20%20%20%20setTimeout%28%28%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20batch.forEach%28app%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20const%20card%20%3D%20document.createElement%28%27a%27%29%3B%0A%20%20%20%20%20%20%20%20card.href%20%3D%20%60aplicativos.html%3Fq%3D%24%7BencodeURIComponent%28app.name%29%7D%60%3B%0A%20%20%20%20%20%20%20%20card.className%20%3D%20%27bsa-play-card%27%3B%0A%20%20%20%20%20%20%20%20card.target%20%3D%20%27_self%27%3B%0A%20%20%20%20%20%20%20%20card.rel%20%3D%20%27noopener%20noreferrer%27%3B%0A%20%20%20%20%20%20%20%20card.innerHTML%20%3D%20%60%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22%24%7Bapp.imageUrl%20%7C%7C%20%27https%3A//via.placeholder.com/120x120/f0f0f0/cccccc%3Ftext%3DApp%27%7D%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20alt%3D%22%24%7Bapp.name%7D%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20class%3D%22bsa-play-img%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20onerror%3D%22this.src%3D%27https%3A//via.placeholder.com/120x120/f0f0f0/cccccc%3Ftext%3DApp%27%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22bsa-play-name%22%3E%24%7Bapp.name%7D%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bsa-play-meta%22%3E%u2B50%20%24%7Bapp.rating%7D%3C/div%3E%0A%20%20%20%20%20%20%20%20%60%3B%0A%20%20%20%20%20%20%20%20grid.appendChild%28card%29%3B%0A%20%20%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20%20%20grid.removeChild%28infiniteLoader%29%3B%0A%20%20%20%20%20%20isLoading%20%3D%20false%3B%0A%0A%20%20%20%20%20%20if%20%28currentIndex%20%3E%3D%20allApps.length%20-%205%20%26%26%20pendingTerms.length%20%3E%200%29%20%7B%0A%20%20%20%20%20%20%20%20loadMoreTermsIfNeeded%28%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%2C%20500%29%3B%0A%20%20%7D%0A%0A%20%20function%20handleScroll%28%29%20%7B%0A%20%20%20%20if%20%28isLoading%20%7C%7C%20currentIndex%20%3E%3D%20allApps.length%29%20%7B%0A%20%20%20%20%20%20if%20%28pendingTerms.length%20%3E%200%20%26%26%20%21isFetchingMoreTerms%29%20%7B%0A%20%20%20%20%20%20%20%20loadMoreTermsIfNeeded%28%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20return%3B%0A%20%20%20%20%7D%0A%20%20%20%20const%20%7B%20scrollTop%2C%20scrollHeight%2C%20clientHeight%20%7D%20%3D%20document.documentElement%3B%0A%20%20%20%20if%20%28scrollTop%20+%20clientHeight%20%3E%3D%20scrollHeight%20-%20800%29%20%7B%0A%20%20%20%20%20%20renderBatch%28%29%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%0A%20%20loadInitialApps%28%29%3B%0A%20%20window.addEventListener%28%27scroll%27%2C%20handleScroll%29%3B%0A%0A%20%20//%20%u2705%20Detecta%20modo%20escuro%20e%20aplica%20tema%20automaticamente%0A%20%20function%20checkDarkMode%28%29%20%7B%0A%20%20%20%20const%20isDark%20%3D%20window.matchMedia%3F.%28%27%28prefers-color-scheme%3A%20dark%29%27%29.matches%3B%0A%20%20%20%20document.documentElement.classList.toggle%28%27is-dark%27%2C%20isDark%29%3B%0A%20%20%7D%0A%20%20checkDarkMode%28%29%3B%0A%20%20window.matchMedia%3F.%28%27%28prefers-color-scheme%3A%20dark%29%27%29.addEventListener%28%27change%27%2C%20checkDarkMode%29%3B%0A%7D%29%28%29%3B%0A%3C/script%3E'));
-    </script>  
-  
+    </script>
   </main>
-
   <!-- Rodapé -->
   <footer id="footer-wrapper">
     <div class="primary-footer">
@@ -578,9 +608,9 @@
           </div>
           <div class="LinkList">
             <ul class="social-icons">
-              <li class="youtube"><a href="https://www.youtube.com/@blackpilado" title="YouTube"></a></li>
-              <li class="twitter"><a href="http://www.twitter.com/Blackpiladobr" title="Twitter"></a></li>
-              <li class="tiktok"><a href="http://www.tiktok.com/@blackpilado" title="TikTok"></a></li>
+              <li class="youtube"><a href="https://www.youtube.com/@blackpilado" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+              <li class="twitter"><a href="http://www.twitter.com/Blackpiladobr" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li class="tiktok"><a href="http://www.tiktok.com/@blackpilado" title="TikTok"><i class="fab fa-tiktok"></i></a></li>
             </ul>
           </div>
         </div>
@@ -601,13 +631,11 @@
       </div>
     </div>
   </footer>
-
   <!-- Scripts -->
   <script>
     // Função para alternar o tema escuro/claro
     function toggleDarkMode() {
       document.documentElement.classList.toggle('is-dark');
-
       // Salvar preferência no localStorage
       if (document.documentElement.classList.contains('is-dark')) {
         localStorage.setItem('theme', 'dark');
@@ -615,7 +643,6 @@
         localStorage.setItem('theme', 'light');
       }
     }
-
     // Aplicar tema salvo ao carregar a página
     document.addEventListener('DOMContentLoaded', function() {
       const savedTheme = localStorage.getItem('theme');
@@ -623,9 +650,10 @@
         document.documentElement.classList.add('is-dark');
       }
     });
-
     // Adicionar evento de clique ao botão de modo escuro
-    document.querySelector('.darkmode-toggle').addEventListener('click', toggleDarkMode);
+    document.querySelectorAll('.darkmode-toggle').forEach(button => {
+      button.addEventListener('click', toggleDarkMode);
+    });
 
     // Lógica para o botão de busca
     function performSearch() {
@@ -635,19 +663,18 @@
         window.location.href = `busca.html?q=${encodeURIComponent(query)}`;
       }
     }
-
     // Mostrar/Esconder a barra de busca ao clicar na lupa
-    document.querySelector('.show-search').addEventListener('click', function() {
-      document.getElementById('main-search-wrap').style.display = 'block';
-      document.querySelector('.search-input').focus();
+    document.querySelectorAll('.show-search').forEach(button => {
+      button.addEventListener('click', function() {
+        document.getElementById('main-search-wrap').style.display = 'block';
+        document.querySelector('.search-input').focus();
+      });
     });
-
     // Esconder a barra de busca ao clicar no "X"
     document.querySelector('.hide-search').addEventListener('click', function() {
       document.getElementById('main-search-wrap').style.display = 'none';
       document.querySelector('.search-input').value = ''; // Limpa o campo
     });
-
     // Também ativa a busca ao pressionar "Enter" dentro do campo de pesquisa
     document.querySelector('.search-input').addEventListener('keypress', function(e) {
       if (e.key === 'Enter') {
@@ -655,15 +682,38 @@
       }
     });
 
-    // Lógica simples para o menu mobile (apenas abre/fecha)
-    document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-      alert('Menu Mobile (em construção)');
+    // Lógica para o menu mobile
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('active');
+      mobileMenuOverlay.style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Impede scroll da página principal
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('active');
+      mobileMenuOverlay.style.display = 'none';
+      document.body.style.overflow = ''; // Restaura o scroll
+    }
+
+    mobileMenuToggle.addEventListener('click', openMobileMenu);
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+    // Fecha o menu se a janela for redimensionada para desktop
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+        closeMobileMenu();
+      }
     });
 
     // Script do Clima
     (function() {
       const weatherContent = document.getElementById('weather-content');
-      
       async function fetchWeatherData() {
         try {
           const ipApiResponse = await fetch('https://ipapi.co/json/');
@@ -671,20 +721,15 @@
           const city = locationData.city || 'Localização Desconhecida';
           const latitude = locationData.latitude;
           const longitude = locationData.longitude;
-          
           if (!latitude || !longitude) throw new Error('Não foi possível obter a localização.');
-          
           const weatherApiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=' + latitude +
                                 '&longitude=' + longitude +
                                 '&current_weather=true';
-                                
           const weatherApiResponse = await fetch(weatherApiUrl);
           const weatherData = await weatherApiResponse.json();
-          
           const temperature = weatherData.current_weather?.temperature || 'N/A';
           const weatherCode = weatherData.current_weather?.weathercode || 0;
           const weatherInfo = getWeatherInfo(weatherCode);
-          
           weatherContent.innerHTML = `
             <span class="city">${city}</span>
             <div class="weather-info">
@@ -703,7 +748,6 @@
           `;
         }
       }
-      
       function getWeatherInfo(weatherCode) {
         const weatherMap = {
           0: { description: 'Céu limpo', icon: '☀️' },
@@ -728,14 +772,11 @@
           96: { description: 'Tempestade com granizo leve', icon: '⛈️' },
           99: { description: 'Tempestade com granizo pesado', icon: '⛈️' },
         };
-        
         return weatherMap[weatherCode] || { description: 'Condições desconhecidas', icon: '❓' };
       }
-      
       // Executa a função de busca do clima quando a página carregar
       fetchWeatherData();
     })();
   </script>
-
 </body>
 </html>
